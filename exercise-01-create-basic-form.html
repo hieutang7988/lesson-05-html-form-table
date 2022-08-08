@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="simpleform.html">
+        <h1> Order Form </h1>
+        <p> What would you like to buy?</p>
+        <select name="cars" id="cars">
+          <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </optgroup>
+          <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </optgroup>
+        </select>
+        <p> How many would you like to order ?</p>
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">0-$10</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">2-$25</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">3-$30</label><br>
+        <p>Name <span style="color: red">*</span> </p>
+        <input type = "text" name="firstname" placeholder="FirstName" size="15"/>
+        <input type = "text" name="lastname" placeholder="LastName" size="15"/>
+        <p> Email</p>
+        <input type = "text" name="email" size="35"/>
+        <p>Phone Number</p>
+        <input type = "text" name="phone1" size="5"/> -
+        <input type = "text" name="phone2" size="5"/> -
+        <input type = "text" name="phone3" size="5"/><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
